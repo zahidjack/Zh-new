@@ -1,70 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pakistan Clothing - Nay Zar Thein</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<div class="product-grid">
 
-    <div class="header">
-        <h1>Pakistan Clothing Collection</h1>
-        <p>Buy your favorite dresses now! (Payment via KBZPay)</p>
-    </div>
-
-    <div class="product-grid">
-
-        <!-- Product Example -->
-        <div class="product-card">
-            <img src="https://via.placeholder.com/300x400.png?text=Dress+1" alt="Dress 1">
-            <div class="product-info">
-                <h2>Elegant Dress 1</h2>
-                <p class="price">45,000 MMK</p>
-
-                <label for="size1">Select Size:</label>
-                <select id="size1" class="size-select">
-                    <option>S</option>
-                    <option>M</option>
-                    <option>L</option>
-                    <option>XL</option>
-                </select>
-
-                <button class="buy-btn" onclick="startCheckout('Elegant Dress 1', '45000', 'size1')">Buy Now</button>
-            </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/300x400?text=Dress+1" alt="Dress 1">
+        <div class="product-info">
+            <h2>Elegant White Dress</h2>
+            <p class="price">45,000 MMK</p>
+            <label>Size:</label>
+            <select id="size1">
+                <option>S</option><option>M</option><option>L</option><option>XL</option>
+            </select>
+            <button class="buy-btn" onclick="startCheckout('Elegant White Dress', '45000', 'size1')">Buy Now</button>
         </div>
-
-        <!-- ထပ်ထည့်ချင်ရင် နောက်ထပ် Copy Paste လုပ်လို့ရတယ် -->
-
     </div>
 
-    <!-- Checkout Form (Hidden) -->
-    <div class="checkout-form hidden" id="checkoutForm">
-        <h2>Shipping Information</h2>
-
-        <form id="orderForm">
-            <input type="text" id="fullName" placeholder="Full Name" required>
-            <input type="text" id="phoneNumber" placeholder="Phone Number" required>
-            <input type="text" id="address" placeholder="Full Address" required>
-
-            <h3>KBZPay Payment</h3>
-            <p>Send to KBZPay Number: <strong>09777581733</strong></p>
-            <p>Account Name: <strong>Nay Zar Thein</strong></p>
-
-            <label for="screenshot">Upload Payment Screenshot:</label>
-            <input type="file" id="screenshot" required>
-
-            <button type="submit" class="submitBtn">Submit Order</button>
-        </form>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/300x400?text=Dress+2" alt="Dress 2">
+        <div class="product-info">
+            <h2>Luxury Black Gown</h2>
+            <p class="price">65,000 MMK</p>
+            <label>Size:</label>
+            <select id="size2">
+                <option>S</option><option>M</option><option>L</option><option>XL</option>
+            </select>
+            <button class="buy-btn" onclick="startCheckout('Luxury Black Gown', '65000', 'size2')">Buy Now</button>
+        </div>
     </div>
 
-    <!-- Success Message -->
-    <div id="orderSuccess" class="hidden">
-        <h2>Thank you!</h2>
-        <p>Your Order Number is: <span id="orderNumber"></span></p>
-        <p>Please message us on our <a href="https://www.facebook.com/" target="_blank">Facebook Page</a> with your Order Number.</p>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/300x400?text=Dress+3" alt="Dress 3">
+        <div class="product-info">
+            <h2>Summer Floral Dress</h2>
+            <p class="price">38,000 MMK</p>
+            <label>Size:</label>
+            <select id="size3">
+                <option>S</option><option>M</option><option>L</option><option>XL</option>
+            </select>
+            <button class="buy-btn" onclick="startCheckout('Summer Floral Dress', '38000', 'size3')">Buy Now</button>
+        </div>
     </div>
 
-    <script src="script.js"></script>
-</body>
-</html>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/300x400?text=Dress+4" alt="Dress 4">
+        <div class="product-info">
+            <h2>Elegant Maroon Kurti</h2>
+            <p class="price">52,000 MMK</p>
+            <label>Size:</label>
+            <select id="size4">
+                <option>S</option><option>M</option><option>L</option><option>XL</option>
+            </select>
+            <button class="buy-btn" onclick="startCheckout('Elegant Maroon Kurti', '52000', 'size4')">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://via.placeholder.com/300x400?text=Shalwar+5" alt="Shalwar 5">
+        <div class="product-info">
+            <h2>Traditional Shalwar</h2>
+            <p class="price">48,000 MMK</p>
+            <label>Size:</label>
+            <select id="size5">
+                <option>S</option><option>M</option><option>L</option><option>XL</option>
+            </select>
+            <button class="buy-btn" onclick="startCheckout('Traditional Shalwar', '48000', 'size5')">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://via.placeholder.com/300x400?text=Party+Dress+6" alt="Party Dress 6">
+        <div class="product-info">
+            <h2>Party Wear Maxi</h2>
+            <p class="price">72,000 MMK</p>
+            <label>Size:</label>
+            <select id="size6">
+                <option>S</option><option>M</option><option>L</option><option>XL</option>
+            </select>
+            <button class="buy-btn" onclick="startCheckout('Party Wear Maxi', '72000', 'size6')">Buy Now</button>
+        </div>
+    </div>
+
+</div>
