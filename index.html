@@ -2,19 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZH New</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pakistan Clothing</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Welcome to ZH New</h1>
-    <p>This is a sample website deployed on Vercel!</p>
+    <div class="logo">Pakistan Clothing</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <button onclick="sayHello()">Click Me</button>
-  </main>
+  <section class="hero">
+    <h1>Welcome to Pakistan Clothing</h1>
+    <p>Elegant Traditional Wear for Everyone</p>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Our Collection</h2>
+    <div class="product-list" id="product-list"></div>
+  </section>
+
+  <footer id="contact">
+    <p>© 2025 Pakistan Clothing. All Rights Reserved.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
